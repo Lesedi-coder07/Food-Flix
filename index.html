@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>FoodFlix</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style/main.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <div class="content">
+        <div class="nav">
+            <h1>Food Flix</h1>
+             <div class="nav-list">
+                <input id="food_search_input" placeholder="Search Food here..." type="text"> 
+                <button onclick="search() "><span  class="material-symbols-outlined">
+                    search
+                    </span></button>
+             </div>
+        </div>
+        <div class="wrapper">
+
+         <div id="rec_div" class="recipe">
+
+         <div class="header-section">
+          <img id="food_img" src="" width="500px">
+          <div class="sub-header-section">
+            <h2 id="food_title"></h2>
+            <ul id="ing_list">
+                <h3>Ingredients</h3>
+            </ul>
+        </div>
+        </div>   
+
+             <div class="details">
+                 <p id="price">R100</p>
+                 <p id="health">Vegan</p>
+                 <p id="time">97min</p>
+                 <p id="dish_type">Idk</p>
+             </div>
+
+              <div class="instructions">
+                  <ol id="instruct">
+
+                  </ol>
+                  <ul id="">
+
+                  </ul>
+              </div>
+      </div>
+    </div>
+        <button class="tooltip" id='gen' onclick="fetchData()"  >Generate</button>
+    </div>
+    
+    <script src='js/main.js'></script>
+</body>
+</html>
